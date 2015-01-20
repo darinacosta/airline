@@ -1,11 +1,15 @@
 body{
-  background-color:rgb(36, 36, 36);
   font-family: Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   text-align: center;
-  background-image: url('../i/grid.png');
-  background-attachment: fixed;
   color:#868686;
   font-size:14px;
+  background-color:rgb(36, 36, 36);
+  background-image: url('../i/grid.png');
+  background-attachment: fixed;
+}
+
+.wrapper{
+  display:none;
 }
 
 h1,h2,h3{
