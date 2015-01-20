@@ -1,24 +1,27 @@
-  <div class="container" style="max-width:585px">  
-    <img src="http://verylongroad.com/media/i/refinery_silhouette_upsidedown_v1.png" style="max-width:100%">
-    <h1>The Airline is a <br>Very Long Road</h1>
-    <hr id="break">
-    <div class="video-wrap">
-      <video width="100%" style="max-width:300px;border:1px solid #3F3F3F;" autoplay="autoplay" loop> 
-        <source src="http://verylongroad.com/media/norco_flaring_v1.webm" type="video/webm">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <div class="col-md-12">
-      <br>
-      <p>Videos, photographs, web applications, and ephemeral research on the development of Louisiana, as well as the cyclical economic collapse, social strife, and environmental decay that often result. Additional localities included when relevant.</p>
+  <div class="container">
+    <div id="header">  
+      <img src="http://verylongroad.com/media/i/refinery_silhouette_upsidedown_v1.png" style="max-width:100%">
+      <h1>The Airline is a Very Long Road</h1>
       <hr id="break">
-      <div>
-        <span class="subtitle" ng-repeat="site in sites">
-          <a href="{{site.url}}" target="_blank">{{site.alias}}</a>
-          <span ng-if="site.alias !== sites[sites.length - 1].alias">
-           |
-          </span>
-        </span>
+      <!--div class="video-wrap">
+        <video width="100%" style="max-width:300px;border:1px solid #3F3F3F;" autoplay="autoplay" loop> 
+          <source src="http://verylongroad.com/media/norco_flaring_v1.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+      </div-->
+      <p>Videos, photographs, web applications, and ephemeral research on the development of Louisiana, as well as the cyclical economic collapse, social strife, and environmental decay that often result. Additional localities included when relevant.</p>
+    </div>
+    <br>
+    <div>
+      <div class="col-md-3" ng-repeat="collection in collections">
+        <h4>{{collection.alias}}</h4> 
+        <div ng-repeat="resource in collection.resources">
+          <a href="{{resource.url}}" target="_blank">
+            <span class="thumbnail" id="collection-entry">
+              <u>{{resource.alias}}</u> - {{resource.description}}
+            </span>
+          </a>
+        </div>
       </div> 
     </div>
-  </container>
+  </div>

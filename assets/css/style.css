@@ -1,12 +1,12 @@
 body{
-    background-color:rgb(36, 36, 36);
-    font-family: Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    text-align: center;
-    background-image: url('../i/grid.png');
-    background-attachment: fixed;
-    color:#868686;
-    font-size:17px;
-  }
+  background-color:rgb(36, 36, 36);
+  font-family: Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  text-align: center;
+  background-image: url('../i/grid.png');
+  background-attachment: fixed;
+  color:#868686;
+  font-size:14px;
+}
 
 h1,h2,h3{
   font-family: Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
@@ -14,6 +14,12 @@ h1,h2,h3{
 
 h1{
   font-size:35px;
+}
+
+h4{
+  font-weight: bold;
+  font-size: 21px;
+  letter-spacing: 2px;
 }
 
 #break{
@@ -28,14 +34,18 @@ h1{
   font-size:25px;
 }
 
-a{
+a, a:hover, a:active, a:visited{
   color:#868686;
+  text-decoration:none;
 }
 
-a:hover{
-  color:black;
+#collection-entry:hover{
+  background-color: rgba(12,12,12,.7);
 }
 
-.subtitle{
-  font-size:13px;
+/*BOOTSTRAP*/
+
+.thumbnail{
+  background-color: transparent;
+  border: none;
 }
