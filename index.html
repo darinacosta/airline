@@ -13,8 +13,14 @@
   <link href="assets/css/style.css" rel="stylesheet" media="screen">
 </head>
 <body>
-  <div class="wrapper">
-    <div ng-view></div>
+  <div class="content-wrapper">
+    <div class="container">
+      <div id="header">  
+        <h1>The Airline is a Very Long Road</h1>
+        <hr id="break">
+      </div>
+      <div ng-view></div>
+    </div>
   </div>
 </body>
 </html>
