@@ -13,11 +13,6 @@ define(['angularAMD', 'angularRoute'],
       .otherwise({redirectTo: "/"});
     });
 
-    $(document).ready(function(){
-        $('.wrapper').css('min-height', '100%');
-        $('.wrapper').fadeIn(1500);
-    });
-
     return angularAMD.bootstrap(app);
 });
 

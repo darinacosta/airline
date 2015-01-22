@@ -10,10 +10,11 @@ body{
 }
 
 .wrapper{
-  display:none;
   background-image: url('../i/refinery_silhouette_long_v1.png');
   background-repeat: repeat-y;
   background-attachment: fixed;
+  min-height:100%;
+  height:100%;
 }
 
 h1,h2,h3{
