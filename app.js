@@ -12,7 +12,6 @@ define(['angularAMD', 'angularRoute'],
       }))
       .otherwise({redirectTo: "/"});
     });
-
     return angularAMD.bootstrap(app);
 });
 
