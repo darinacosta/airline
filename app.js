@@ -14,10 +14,10 @@ define(['angularAMD', 'angularRoute'],
     });
 
     $(document).ready(function(){
-        $('.wrapper').css('height', '100%')
-        $('.wrapper').fadeIn(1500)
+        $('.wrapper').css('min-height', '100%');
+        $('.wrapper').fadeIn(1500);
     });
-    
+
     return angularAMD.bootstrap(app);
 });
 

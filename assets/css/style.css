@@ -7,15 +7,13 @@ body{
   background-color:rgb(36, 36, 36);
   background-image: url('../i/grid.png');
   background-attachment: fixed;
-  height:100%;
 }
 
 .wrapper{
   display:none;
-  background-image: url('http://localhost/airline/assets/i/refinery_silhouette_double_sideways_v1.png');
+  background-image: url('../i/refinery_silhouette_double_sideways_v1.png');
   background-repeat: repeat-y;
   background-attachment: fixed;
-  height:100%;
 }
 
 h1,h2,h3{
