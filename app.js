@@ -14,6 +14,7 @@ define(['angularAMD', 'angularRoute'],
     });
 
     $(document).ready(function(){
+        $('.wrapper').css('height', '100%')
         $('.wrapper').fadeIn(1500)
     });
     
